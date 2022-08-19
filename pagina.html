@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Raisa Garcia</title>
+</head>
+<body>
+    <header>
+        <h1>Raisa Garcia</h1>
+        <nav>
+            <ul>
+                <li class="link-seleccionado"><a href="pagina.html">Inicio</a></li>
+                <li><a href="sobremii.html">Sobre Mi</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="">Redes sociales</a></li>
+            </ul>
+            <a href="https://wa.link/okcjvk" class="btn-comprar">Contacto</a>
+        </nav>
+        <div class="nav-bar" id="nav-bar"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <div class="jajapo">
+  <h1></h1>
+    </div>
+
+    <section id="inicio">
+        <div class="contenido">
+            <div class="info">
+                <h3>Raisa Garcia</h3>
+                <span>Micropigmentadora y Especialista en cejas</span>
+                <div class="redes">
+                    <a href="https://www.facebook.com/comoencasa.criollos/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/comoencasa.restaurant/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-img">
+            <div class="imagen"></div>
+        </div>
+    </section>
+
+    <script>
+        let nav_var = document.getElementById("nav-bar");
+        let menu_responsive = "oculto";
+
+        nav_var.onclick = function() {
+            if (menu_responsive == "oculto") {
+                document.querySelector("nav").className = "active";
+                menu_responsive = "visible"
+            } else {
+                document.querySelector("nav").className = "";
+                menu_responsive = "oculto";
+            }
+        }
+    </script>
+</body>
+
+</html>
